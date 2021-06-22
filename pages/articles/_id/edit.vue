@@ -1,5 +1,5 @@
 <template>
-  <div>てすと</div>
+  <div>編集ページ</div>
 </template>
 
 <script>
