@@ -1,6 +1,8 @@
 <template>
   <div>
     <div>{{ count }}</div>
+    <button @click="plus">+</button>
+    <button @click="minus">-</button>
   </div>
 </template>
 
@@ -10,6 +12,14 @@ export default {
     return {
       count: 100,
     }
+  },
+  methods: {
+    plus() {
+      this.count += 1
+    },
+    minus() {
+      this.count -= 1
+    },
   },
 }
 </script>
