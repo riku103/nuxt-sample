@@ -7,6 +7,7 @@
     <v-btn class="mx-1" fab dark color="orange" @click="minus">
       <v-icon dark> mdi-minus </v-icon>
     </v-btn>
+    <counter-button />
   </div>
 </template>
 
