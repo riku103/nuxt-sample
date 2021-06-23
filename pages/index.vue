@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import CounterButton from '@/components/CounterButton.vue'
+
 export default {
   data() {
     return {
