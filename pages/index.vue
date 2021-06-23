@@ -14,6 +14,9 @@
 import CounterButton from '@/components/CounterButton.vue'
 
 export default {
+  components: {
+    CounterButton,
+  },
   data() {
     return {
       count: 100,
