@@ -1,5 +1,5 @@
 <template>
-  <v-btn class="mx-1" fab dark :color="color" @click="plus">
+  <v-btn class="mx-1" fab dark :color="color" @click="click">
     <v-icon dark> mdi-{{ kind }} </v-icon>
   </v-btn>
 </template>
@@ -14,6 +14,11 @@ export default {
     color: {
       type: String,
       default: 'blue',
+    },
+  },
+  methods: {
+    click() {
+      this.$emit('click')
     },
   },
 }
