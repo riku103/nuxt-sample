@@ -1,5 +1,20 @@
 <template>
-  <v-btn class="mx-1" fab dark color="blue" @click="plus">
-    <v-icon dark> mdi-plus </v-icon>
+  <v-btn class="mx-1" fab dark :color="color" @click="plus">
+    <v-icon dark> mdi-{{ kind }} </v-icon>
   </v-btn>
 </template>
+
+<script>
+export default {
+  props: {
+    kind: {
+      type: String,
+      default: 'plus',
+    },
+    color: {
+      type: String,
+      default: 'blue',
+    },
+  },
+}
+</script>
