@@ -1,8 +1,12 @@
 <template>
   <div class="container">
     <div class="number">{{ count }}</div>
-    <button class="button" @click="plus">+</button>
-    <button class="button" @click="minus">-</button>
+    <v-btn class="mx-1" fab dark color="blue" @click="plus">
+      <v-icon dark> mdi-plus </v-icon>
+    </v-btn>
+    <v-btn class="mx-1" fab dark color="orange" @click="minus">
+      <v-icon dark> mdi-minus </v-icon>
+    </v-btn>
   </div>
 </template>
 
@@ -28,14 +32,6 @@ export default {
 .container {
   .number {
     font-size: 64px;
-  }
-
-  .button {
-    font-size: 32px;
-    border: 2px solid white;
-    border-radius: 4px;
-    width: 48px;
-    height: 48px;
   }
 }
 </style>
