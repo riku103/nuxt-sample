@@ -26,6 +26,7 @@ export default {
 
   updated() {
     console.log('updated')
+    console.log(this.number)
   },
 }
 </script>
