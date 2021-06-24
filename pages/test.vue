@@ -18,6 +18,8 @@
 
     <input v-model="score" type="text" />
     <v-text-field v-model="score"></v-text-field>
+
+    <div v-for="fruit in fruits" :key="fruit.name">{{ fruit.name }}</div>
   </div>
 </template>
 
@@ -28,6 +30,12 @@ export default {
       isShown: true,
       score: 10,
       googleLink: 'https://google.com',
+      fruits: [
+        { name: 'apple' },
+        { name: 'orange' },
+        { name: 'grape' },
+        { name: 'peach' },
+      ],
     }
   },
   methods: {
