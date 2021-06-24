@@ -8,6 +8,10 @@
     <!-- <a :href="googleLink">Googleへのリンク</a> -->
     <img :src="imageUrl()" width="100px" />
 
+    <v-btn @click="showMessage('クリック')">クリック</v-btn>
+    <v-btn @dblclick="showMessage('ダブルクリック')">ダブルクリック</v-btn>
+    <v-btn @mouseenter="showMessage('マウスエンター')">マウスエンター</v-btn>
+
     <!-- v-show -->
     <!-- <div v-show="isShown">みえるかな？</div> -->
     <!-- <v-btn @click="toggleShown">表示/非表示の切り替え</v-btn> -->
@@ -35,6 +39,9 @@ export default {
       } else {
         return 'https://2.bp.blogspot.com/-Bc8NTQ2PqY8/U0pTOuIDWQI/AAAAAAAAfGY/1RU2LKdozKs/s800/grade5_ganbarimasyou.png'
       }
+    },
+    showMessage(message) {
+      alert(message)
     },
   },
 }
