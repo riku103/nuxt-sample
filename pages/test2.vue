@@ -2,7 +2,7 @@
   <div>
     <div>テスト</div>
 
-    <v-text-field v-model="number" />
+    <v-text-field ref="number" v-model="number" />
     <div>数値: {{ number }}</div>
   </div>
 </template>
@@ -21,6 +21,7 @@ export default {
 
   mounted() {
     console.log('mounted')
+    this.$refs.number.focus()
   },
 
   updated() {
