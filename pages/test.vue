@@ -8,13 +8,16 @@
     <!-- <a :href="googleLink">Googleへのリンク</a> -->
     <img :src="imageUrl()" width="100px" />
 
-    <v-btn @click="showMessage('クリック')">クリック</v-btn>
+    <!-- <v-btn @click="showMessage('クリック')">クリック</v-btn>
     <v-btn @dblclick="showMessage('ダブルクリック')">ダブルクリック</v-btn>
-    <v-btn @mouseenter="showMessage('マウスエンター')">マウスエンター</v-btn>
+    <v-btn @mouseenter="showMessage('マウスエンター')">マウスエンター</v-btn> -->
 
     <!-- v-show -->
     <!-- <div v-show="isShown">みえるかな？</div> -->
     <!-- <v-btn @click="toggleShown">表示/非表示の切り替え</v-btn> -->
+
+    <input v-model="score" type="text" />
+    <v-text-field v-model="score"></v-text-field>
   </div>
 </template>
 
